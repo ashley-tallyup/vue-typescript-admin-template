@@ -1,5 +1,5 @@
 import { VuexModule, Module, Mutation, Action, getModule } from 'vuex-module-decorators'
-import store from '@/store'
+import store from '@/vue-typescript-admin-template/src/store'
 
 interface IErrorLog {
   err: Error

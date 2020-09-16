@@ -109,9 +109,9 @@ import { Component, Vue, Watch } from 'vue-property-decorator'
 import { Route } from 'vue-router'
 import { Dictionary } from 'vue-router/types/router'
 import { Form as ElForm, Input } from 'element-ui'
-import { UserModule } from '@/store/modules/user'
-import { isValidUsername } from '@/utils/validate'
-import LangSelect from '@/components/LangSelect/index.vue'
+import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import { isValidUsername } from '@/vue-typescript-admin-template/src/utils/validate'
+import LangSelect from '@/vue-typescript-admin-template/src/components/LangSelect/index.vue'
 import SocialSign from './components/SocialSignin.vue'
 
 @Component({
@@ -222,10 +222,10 @@ export default class extends Vue {
 
 <style lang="scss">
 // References: https://www.zhangxinxu.com/wordpress/2018/01/css-caret-color-first-line/
-@supports (-webkit-mask: none) and (not (cater-color: $loginCursorColor)) {
+@supports (-webkit-mask: none) and (not (cater-color: #fff)) {
   .login-container .el-input {
-    input { color: $loginCursorColor; }
-    input::first-line { color: $lightGray; }
+    input { color: #fff; }
+    input::first-line { color: #eee; }
   }
 }
 
@@ -241,12 +241,12 @@ export default class extends Vue {
       border: 0px;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
-      color: $lightGray;
-      caret-color: $loginCursorColor;
+      color: #eee;
+      caret-color: #fff;
       -webkit-appearance: none;
 
       &:-webkit-autofill {
-        box-shadow: 0 0 0px 1000px $loginBg inset !important;
+        box-shadow: 0 0 0px 1000px #2d3a4b inset !important;
         -webkit-text-fill-color: #fff !important;
       }
     }
@@ -266,7 +266,7 @@ export default class extends Vue {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: $loginBg;
+  background-color: #2d3a4b;
 
   .login-form {
     position: relative;
@@ -291,7 +291,7 @@ export default class extends Vue {
 
   .svg-container {
     padding: 6px 5px 6px 15px;
-    color: $darkGray;
+    color: #889aa4;
     vertical-align: middle;
     width: 30px;
     display: inline-block;
@@ -302,7 +302,7 @@ export default class extends Vue {
 
     .title {
       font-size: 26px;
-      color: $lightGray;
+      color: #eee;
       margin: 0px auto 40px auto;
       text-align: center;
       font-weight: bold;
@@ -323,7 +323,7 @@ export default class extends Vue {
     right: 10px;
     top: 7px;
     font-size: 16px;
-    color: $darkGray;
+    color: #889aa4;
     cursor: pointer;
     user-select: none;
   }

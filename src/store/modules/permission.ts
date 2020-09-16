@@ -1,7 +1,7 @@
 import { VuexModule, Module, Mutation, Action, getModule } from 'vuex-module-decorators'
 import { RouteConfig } from 'vue-router'
-import { asyncRoutes, constantRoutes } from '@/router'
-import store from '@/store'
+import { asyncRoutes, constantRoutes } from '@/vue-typescript-admin-template/src/router'
+import store from '@/vue-typescript-admin-template/src/store'
 
 const hasPermission = (roles: string[], route: RouteConfig) => {
   if (route.meta && route.meta.roles) {

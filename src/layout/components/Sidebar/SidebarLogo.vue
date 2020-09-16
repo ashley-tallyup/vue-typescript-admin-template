@@ -35,7 +35,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import settings from '@/settings'
+import settings from '@/vue-typescript-admin-template/src/settings'
 
 @Component({
   name: 'SidebarLogo'

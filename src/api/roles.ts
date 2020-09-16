@@ -1,4 +1,4 @@
-import request from '@/utils/request'
+import request from '@/vue-typescript-admin-template/src/utils/request'
 
 export const getRoles = (params: any) =>
   request({

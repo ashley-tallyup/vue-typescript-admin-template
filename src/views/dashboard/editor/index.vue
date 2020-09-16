@@ -29,9 +29,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { UserModule } from '@/store/modules/user'
-import PanThumb from '@/components/PanThumb/index.vue'
-import GithubCorner from '@/components/GithubCorner/index.vue'
+import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import PanThumb from '@/vue-typescript-admin-template/src/components/PanThumb/index.vue'
+import GithubCorner from '@/vue-typescript-admin-template/src/components/GithubCorner/index.vue'
 
 @Component({
   name: 'DashboardEditor',

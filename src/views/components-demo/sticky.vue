@@ -131,7 +131,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Sticky from '@/components/Sticky/index.vue'
+import Sticky from '@/vue-typescript-admin-template/src/components/Sticky/index.vue'
 
 @Component({
   name: 'StickyDemo',

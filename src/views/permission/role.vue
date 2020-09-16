@@ -120,7 +120,7 @@ import { cloneDeep } from 'lodash'
 import { Component, Vue } from 'vue-property-decorator'
 import { RouteConfig } from 'vue-router'
 import { Tree } from 'element-ui'
-import { getRoutes, getRoles, createRole, deleteRole, updateRole } from '@/api/roles'
+import { getRoutes, getRoles, createRole, deleteRole, updateRole } from '@/vue-typescript-admin-template/src/api/roles'
 
 interface IRole {
   key: number

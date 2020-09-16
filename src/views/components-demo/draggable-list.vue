@@ -20,8 +20,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { getArticles } from '@/api/articles'
-import DraggableList from '@/components/DraggableList/index.vue'
+import { getArticles } from '@/vue-typescript-admin-template/src/api/articles'
+import DraggableList from '@/vue-typescript-admin-template/src/components/DraggableList/index.vue'
 
 @Component({
   name: 'DraggableListDemo',

@@ -1,5 +1,5 @@
 import { RouteConfig } from 'vue-router'
-import Layout from '@/layout/index.vue'
+import Layout from '@/vue-typescript-admin-template/src/layout/index.vue'
 
 const chartsRouter: RouteConfig = {
   path: '/charts',
@@ -13,7 +13,7 @@ const chartsRouter: RouteConfig = {
   children: [
     {
       path: 'bar-chart',
-      component: () => import(/* webpackChunkName: "bar-chart" */ '@/views/charts/bar-chart.vue'),
+      component: () => import(/* webpackChunkName: "bar-chart" */ '@/vue-typescript-admin-template/src/views/charts/bar-chart.vue'),
       name: 'BarChartDemo',
       meta: {
         title: 'barChart',
@@ -22,7 +22,7 @@ const chartsRouter: RouteConfig = {
     },
     {
       path: 'line-chart',
-      component: () => import(/* webpackChunkName: "line-chart" */ '@/views/charts/line-chart.vue'),
+      component: () => import(/* webpackChunkName: "line-chart" */ '@/vue-typescript-admin-template/src/views/charts/line-chart.vue'),
       name: 'LineChartDemo',
       meta: {
         title: 'lineChart',
@@ -31,7 +31,7 @@ const chartsRouter: RouteConfig = {
     },
     {
       path: 'mixed-chart',
-      component: () => import(/* webpackChunkName: "mixed-chart" */ '@/views/charts/mixed-chart.vue'),
+      component: () => import(/* webpackChunkName: "mixed-chart" */ '@/vue-typescript-admin-template/src/views/charts/mixed-chart.vue'),
       name: 'MixedChartDemo',
       meta: {
         title: 'mixedChart',

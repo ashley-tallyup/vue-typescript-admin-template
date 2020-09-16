@@ -76,15 +76,15 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
-import { UserModule } from '@/store/modules/user'
-import Breadcrumb from '@/components/Breadcrumb/index.vue'
-import ErrorLog from '@/components/ErrorLog/index.vue'
-import Hamburger from '@/components/Hamburger/index.vue'
-import HeaderSearch from '@/components/HeaderSearch/index.vue'
-import LangSelect from '@/components/LangSelect/index.vue'
-import Screenfull from '@/components/Screenfull/index.vue'
-import SizeSelect from '@/components/SizeSelect/index.vue'
+import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import Breadcrumb from '@/vue-typescript-admin-template/src/components/Breadcrumb/index.vue'
+import ErrorLog from '@/vue-typescript-admin-template/src/components/ErrorLog/index.vue'
+import Hamburger from '@/vue-typescript-admin-template/src/components/Hamburger/index.vue'
+import HeaderSearch from '@/vue-typescript-admin-template/src/components/HeaderSearch/index.vue'
+import LangSelect from '@/vue-typescript-admin-template/src/components/LangSelect/index.vue'
+import Screenfull from '@/vue-typescript-admin-template/src/components/Screenfull/index.vue'
+import SizeSelect from '@/vue-typescript-admin-template/src/components/SizeSelect/index.vue'
 
 @Component({
   name: 'Navbar',

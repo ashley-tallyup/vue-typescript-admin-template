@@ -56,8 +56,8 @@
 import path from 'path'
 import { Component, Vue, Watch } from 'vue-property-decorator'
 import { RouteConfig } from 'vue-router'
-import { PermissionModule } from '@/store/modules/permission'
-import { TagsViewModule, ITagView } from '@/store/modules/tags-view'
+import { PermissionModule } from '@/vue-typescript-admin-template/src/store/modules/permission'
+import { TagsViewModule, ITagView } from '@/vue-typescript-admin-template/src/store/modules/tags-view'
 import ScrollPane from './ScrollPane.vue'
 
 @Component({

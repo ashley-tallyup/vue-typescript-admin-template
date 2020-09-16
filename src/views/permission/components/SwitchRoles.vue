@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { UserModule } from '@/store/modules/user'
+import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
 
 @Component({
   name: 'SwitchRoles'

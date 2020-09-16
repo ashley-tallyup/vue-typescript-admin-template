@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import MixedChart from '@/components/Charts/MixedChart.vue'
+import MixedChart from '@/vue-typescript-admin-template/src/components/Charts/MixedChart.vue'
 
 @Component({
   name: 'MixedChartDemo',

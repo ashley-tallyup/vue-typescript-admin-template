@@ -29,12 +29,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
-import { PermissionModule } from '@/store/modules/permission'
-import { SettingsModule } from '@/store/modules/settings'
+import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { PermissionModule } from '@/vue-typescript-admin-template/src/store/modules/permission'
+import { SettingsModule } from '@/vue-typescript-admin-template/src/store/modules/settings'
 import SidebarItem from './SidebarItem.vue'
 import SidebarLogo from './SidebarLogo.vue'
-import variables from '@/styles/_variables.scss'
+import variables from '@/vue-typescript-admin-template/src/styles/_variables.scss'
 
 @Component({
   name: 'SideBar',

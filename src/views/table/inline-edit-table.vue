@@ -121,8 +121,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { getArticles } from '@/api/articles'
-import { IArticleData } from '@/api/types'
+import { getArticles } from '@/vue-typescript-admin-template/src/api/articles'
+import { IArticleData } from '@/vue-typescript-admin-template/src/api/types'
 
 @Component({
   name: 'InlineEditTable'

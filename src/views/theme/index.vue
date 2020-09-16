@@ -95,8 +95,8 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator'
-import { toggleClass } from '@/utils'
-import '@/assets/custom-theme/index.css' // the theme changed version element-ui css
+import { toggleClass } from '@/vue-typescript-admin-template/src/utils'
+import '@/vue-typescript-admin-template/src/assets/custom-theme/index.css' // the theme changed version element-ui css
 
 @Component({
   name: 'Theme'

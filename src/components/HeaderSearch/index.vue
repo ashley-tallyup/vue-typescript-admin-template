@@ -35,9 +35,9 @@ import path from 'path'
 import Fuse from 'fuse.js' // A lightweight fuzzy-search module
 import { Component, Vue, Watch } from 'vue-property-decorator'
 import { RouteConfig } from 'vue-router'
-import { AppModule } from '@/store/modules/app'
-import { PermissionModule } from '@/store/modules/permission'
-import i18n from '@/lang' // Internationalization
+import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { PermissionModule } from '@/vue-typescript-admin-template/src/store/modules/permission'
+import i18n from '@/vue-typescript-admin-template/src/lang' // Internationalization
 
 @Component({
   name: 'HeaderSearch'

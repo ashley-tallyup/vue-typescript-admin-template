@@ -76,8 +76,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
-import MarkdownEditor from '@/components/MarkdownEditor/index.vue'
+import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import MarkdownEditor from '@/vue-typescript-admin-template/src/components/MarkdownEditor/index.vue'
 
 const content = `
 **This is test**

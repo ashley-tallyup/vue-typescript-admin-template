@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router, { RouteConfig } from 'vue-router'
 
 /* Layout */
-import Layout from '@/layout/index.vue'
+import Layout from '@/vue-typescript-admin-template/src/layout/index.vue'
 
 /* Router modules */
 import componentsRouter from './modules/components'
@@ -48,28 +48,28 @@ export const constantRoutes: RouteConfig[] = [
     children: [
       {
         path: '/redirect/:path(.*)',
-        component: () => import(/* webpackChunkName: "redirect" */ '@/views/redirect/index.vue')
+        component: () => import(/* webpackChunkName: "redirect" */ '@/vue-typescript-admin-template/src/views/redirect/index.vue')
       }
     ]
   },
   {
     path: '/login',
-    component: () => import(/* webpackChunkName: "login" */ '@/views/login/index.vue'),
+    component: () => import(/* webpackChunkName: "login" */ '@/vue-typescript-admin-template/src/views/login/index.vue'),
     meta: { hidden: true }
   },
   {
     path: '/auth-redirect',
-    component: () => import(/* webpackChunkName: "auth-redirect" */ '@/views/login/auth-redirect.vue'),
+    component: () => import(/* webpackChunkName: "auth-redirect" */ '@/vue-typescript-admin-template/src/views/login/auth-redirect.vue'),
     meta: { hidden: true }
   },
   {
     path: '/404',
-    component: () => import(/* webpackChunkName: "404" */ '@/views/error-page/404.vue'),
+    component: () => import(/* webpackChunkName: "404" */ '@/vue-typescript-admin-template/src/views/error-page/404.vue'),
     meta: { hidden: true }
   },
   {
     path: '/401',
-    component: () => import(/* webpackChunkName: "401" */ '@/views/error-page/401.vue'),
+    component: () => import(/* webpackChunkName: "401" */ '@/vue-typescript-admin-template/src/views/error-page/401.vue'),
     meta: { hidden: true }
   },
   {
@@ -79,7 +79,7 @@ export const constantRoutes: RouteConfig[] = [
     children: [
       {
         path: 'dashboard',
-        component: () => import(/* webpackChunkName: "dashboard" */ '@/views/dashboard/index.vue'),
+        component: () => import(/* webpackChunkName: "dashboard" */ '@/vue-typescript-admin-template/src/views/dashboard/index.vue'),
         name: 'Dashboard',
         meta: {
           title: 'dashboard',
@@ -95,7 +95,7 @@ export const constantRoutes: RouteConfig[] = [
   //   children: [
   //     {
   //       path: 'index',
-  //       component: () => import(/* webpackChunkName: "documentation" */ '@/views/documentation/index.vue'),
+  //       component: () => import(/* webpackChunkName: "documentation" */ '@/vue-typescript-admin-template/src/views/documentation/index.vue'),
   //       name: 'Documentation',
   //       meta: { title: 'documentation', icon: 'documentation', affix: true }
   //     }
@@ -108,7 +108,7 @@ export const constantRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "guide" */ '@/views/guide/index.vue'),
+        component: () => import(/* webpackChunkName: "guide" */ '@/vue-typescript-admin-template/src/views/guide/index.vue'),
         name: 'Guide',
         meta: {
           title: 'guide',
@@ -126,7 +126,7 @@ export const constantRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "profile" */ '@/views/profile/index.vue'),
+        component: () => import(/* webpackChunkName: "profile" */ '@/vue-typescript-admin-template/src/views/profile/index.vue'),
         name: 'Profile',
         meta: {
           title: 'profile',
@@ -156,7 +156,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'page',
-        component: () => import(/* webpackChunkName: "permission-page" */ '@/views/permission/page.vue'),
+        component: () => import(/* webpackChunkName: "permission-page" */ '@/vue-typescript-admin-template/src/views/permission/page.vue'),
         name: 'PagePermission',
         meta: {
           title: 'pagePermission',
@@ -165,7 +165,7 @@ export const asyncRoutes: RouteConfig[] = [
       },
       {
         path: 'directive',
-        component: () => import(/* webpackChunkName: "permission-directive" */ '@/views/permission/directive.vue'),
+        component: () => import(/* webpackChunkName: "permission-directive" */ '@/vue-typescript-admin-template/src/views/permission/directive.vue'),
         name: 'DirectivePermission',
         meta: {
           title: 'directivePermission'
@@ -174,7 +174,7 @@ export const asyncRoutes: RouteConfig[] = [
       },
       {
         path: 'role',
-        component: () => import(/* webpackChunkName: "permission-role" */ '@/views/permission/role.vue'),
+        component: () => import(/* webpackChunkName: "permission-role" */ '@/vue-typescript-admin-template/src/views/permission/role.vue'),
         name: 'RolePermission',
         meta: {
           title: 'rolePermission',
@@ -189,7 +189,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "icons" */ '@/views/icons/index.vue'),
+        component: () => import(/* webpackChunkName: "icons" */ '@/vue-typescript-admin-template/src/views/icons/index.vue'),
         name: 'Icons',
         meta: {
           title: 'icons',
@@ -215,7 +215,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'create',
-        component: () => import(/* webpackChunkName: "example-create" */ '@/views/example/create.vue'),
+        component: () => import(/* webpackChunkName: "example-create" */ '@/vue-typescript-admin-template/src/views/example/create.vue'),
         name: 'CreateArticle',
         meta: {
           title: 'createArticle',
@@ -224,7 +224,7 @@ export const asyncRoutes: RouteConfig[] = [
       },
       {
         path: 'edit/:id(\\d+)',
-        component: () => import(/* webpackChunkName: "example-edit" */ '@/views/example/edit.vue'),
+        component: () => import(/* webpackChunkName: "example-edit" */ '@/vue-typescript-admin-template/src/views/example/edit.vue'),
         name: 'EditArticle',
         meta: {
           title: 'editArticle',
@@ -235,7 +235,7 @@ export const asyncRoutes: RouteConfig[] = [
       },
       {
         path: 'list',
-        component: () => import(/* webpackChunkName: "example-list" */ '@/views/example/list.vue'),
+        component: () => import(/* webpackChunkName: "example-list" */ '@/vue-typescript-admin-template/src/views/example/list.vue'),
         name: 'ArticleList',
         meta: {
           title: 'articleList',
@@ -250,7 +250,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "tab" */ '@/views/tab/index.vue'),
+        component: () => import(/* webpackChunkName: "tab" */ '@/vue-typescript-admin-template/src/views/tab/index.vue'),
         name: 'Tab',
         meta: {
           title: 'tab',
@@ -270,7 +270,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: '401',
-        component: () => import(/* webpackChunkName: "error-page-401" */ '@/views/error-page/401.vue'),
+        component: () => import(/* webpackChunkName: "error-page-401" */ '@/vue-typescript-admin-template/src/views/error-page/401.vue'),
         name: 'Page401',
         meta: {
           title: 'page401',
@@ -279,7 +279,7 @@ export const asyncRoutes: RouteConfig[] = [
       },
       {
         path: '404',
-        component: () => import(/* webpackChunkName: "error-page-404" */ '@/views/error-page/404.vue'),
+        component: () => import(/* webpackChunkName: "error-page-404" */ '@/vue-typescript-admin-template/src/views/error-page/404.vue'),
         name: 'Page404',
         meta: {
           title: 'page404',
@@ -295,7 +295,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'log',
-        component: () => import(/* webpackChunkName: "error-log" */ '@/views/error-log/index.vue'),
+        component: () => import(/* webpackChunkName: "error-log" */ '@/vue-typescript-admin-template/src/views/error-log/index.vue'),
         name: 'ErrorLog',
         meta: {
           title: 'errorLog',
@@ -315,25 +315,25 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'export-excel',
-        component: () => import(/* webpackChunkName: "export-excel" */ '@/views/excel/export-excel.vue'),
+        component: () => import(/* webpackChunkName: "export-excel" */ '@/vue-typescript-admin-template/src/views/excel/export-excel.vue'),
         name: 'ExportExcel',
         meta: { title: 'exportExcel' }
       },
       {
         path: 'export-selected-excel',
-        component: () => import(/* webpackChunkName: "select-excel" */ '@/views/excel/select-excel.vue'),
+        component: () => import(/* webpackChunkName: "select-excel" */ '@/vue-typescript-admin-template/src/views/excel/select-excel.vue'),
         name: 'SelectExcel',
         meta: { title: 'selectExcel' }
       },
       {
         path: 'export-merge-header',
-        component: () => import(/* webpackChunkName: "merge-header" */ '@/views/excel/merge-header.vue'),
+        component: () => import(/* webpackChunkName: "merge-header" */ '@/vue-typescript-admin-template/src/views/excel/merge-header.vue'),
         name: 'MergeHeader',
         meta: { title: 'mergeHeader' }
       },
       {
         path: 'upload-excel',
-        component: () => import(/* webpackChunkName: "upload-excel" */ '@/views/excel/upload-excel.vue'),
+        component: () => import(/* webpackChunkName: "upload-excel" */ '@/vue-typescript-admin-template/src/views/excel/upload-excel.vue'),
         name: 'UploadExcel',
         meta: { title: 'uploadExcel' }
       }
@@ -351,7 +351,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'download',
-        component: () => import(/* webpackChunkName: "zip" */ '@/views/zip/index.vue'),
+        component: () => import(/* webpackChunkName: "zip" */ '@/vue-typescript-admin-template/src/views/zip/index.vue'),
         name: 'ExportZip',
         meta: { title: 'exportZip' }
       }
@@ -364,7 +364,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "pdf" */ '@/views/pdf/index.vue'),
+        component: () => import(/* webpackChunkName: "pdf" */ '@/vue-typescript-admin-template/src/views/pdf/index.vue'),
         name: 'PDF',
         meta: {
           title: 'pdf',
@@ -375,7 +375,7 @@ export const asyncRoutes: RouteConfig[] = [
   },
   {
     path: '/pdf-download-example',
-    component: () => import(/* webpackChunkName: "pdf-download-example" */ '@/views/pdf/download.vue'),
+    component: () => import(/* webpackChunkName: "pdf-download-example" */ '@/vue-typescript-admin-template/src/views/pdf/download.vue'),
     meta: { hidden: true }
   },
   {
@@ -385,7 +385,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "theme" */ '@/views/theme/index.vue'),
+        component: () => import(/* webpackChunkName: "theme" */ '@/vue-typescript-admin-template/src/views/theme/index.vue'),
         name: 'Theme',
         meta: {
           title: 'theme',
@@ -401,7 +401,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "clipboard" */ '@/views/clipboard/index.vue'),
+        component: () => import(/* webpackChunkName: "clipboard" */ '@/vue-typescript-admin-template/src/views/clipboard/index.vue'),
         name: 'Clipboard',
         meta: {
           title: 'clipboard',
@@ -416,7 +416,7 @@ export const asyncRoutes: RouteConfig[] = [
     children: [
       {
         path: 'index',
-        component: () => import(/* webpackChunkName: "i18n-demo" */ '@/views/i18n-demo/index.vue'),
+        component: () => import(/* webpackChunkName: "i18n-demo" */ '@/vue-typescript-admin-template/src/views/i18n-demo/index.vue'),
         name: 'I18n',
         meta: {
           title: 'i18n',

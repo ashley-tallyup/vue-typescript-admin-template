@@ -1,4 +1,4 @@
-import { UserModule } from '@/store/modules/user'
+import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
 
 export const checkPermission = (value: string[]): boolean => {
   if (value && value instanceof Array && value.length > 0) {

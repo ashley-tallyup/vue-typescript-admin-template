@@ -26,8 +26,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
-import { TagsViewModule } from '@/store/modules/tags-view'
+import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { TagsViewModule } from '@/vue-typescript-admin-template/src/store/modules/tags-view'
 
 @Component({
   name: 'SizeSelect'

@@ -63,8 +63,8 @@ import 'tinymce/plugins/visualchars'
 import 'tinymce/plugins/wordcount'
 import TinymceEditor from '@tinymce/tinymce-vue' // TinyMCE vue wrapper
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
-import { SettingsModule } from '@/store/modules/settings'
+import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { SettingsModule } from '@/vue-typescript-admin-template/src/store/modules/settings'
 import EditorImageUpload, { IUploadObject } from './components/EditorImage.vue'
 import { plugins, toolbar } from './config'
 

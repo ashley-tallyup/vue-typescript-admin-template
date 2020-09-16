@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Dropzone from '@/components/Dropzone/index.vue'
+import Dropzone from '@/vue-typescript-admin-template/src/components/Dropzone/index.vue'
 
 @Component({
   name: 'DropzoneDemo',

@@ -1,10 +1,10 @@
 import { VuexModule, Module, Action, Mutation, getModule } from 'vuex-module-decorators'
-import { login, logout, getUserInfo } from '@/api/users'
-import { getToken, setToken, removeToken } from '@/utils/cookies'
-import router, { resetRouter } from '@/router'
+import { login, logout, getUserInfo } from '@/vue-typescript-admin-template/src/api/users'
+import { getToken, setToken, removeToken } from '@/vue-typescript-admin-template/src/utils/cookies'
+import router, { resetRouter } from '@/vue-typescript-admin-template/src/router'
 import { PermissionModule } from './permission'
 import { TagsViewModule } from './tags-view'
-import store from '@/store'
+import store from '@/vue-typescript-admin-template/src/store'
 
 export interface IUserState {
   token: string

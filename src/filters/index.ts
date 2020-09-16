@@ -1,5 +1,5 @@
 // Set utils function parseTime to filter
-export { parseTime } from '@/utils'
+export { parseTime } from '@/vue-typescript-admin-template/src/utils'
 
 // Filter for article status
 export const articleStatusFilter = (status: string) => {

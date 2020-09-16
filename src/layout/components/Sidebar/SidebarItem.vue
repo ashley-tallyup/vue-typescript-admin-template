@@ -57,7 +57,7 @@
 import path from 'path'
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { RouteConfig } from 'vue-router'
-import { isExternal } from '@/utils/validate'
+import { isExternal } from '@/vue-typescript-admin-template/src/utils/validate'
 import SidebarItemLink from './SidebarItemLink.vue'
 
 @Component({
@@ -125,17 +125,17 @@ export default class extends Vue {
 
 <style lang="scss">
 .el-submenu.is-active > .el-submenu__title {
-  color: $subMenuActiveText !important;
+  color: #f4f4f5 !important;
 }
 
 .full-mode {
   .nest-menu .el-submenu>.el-submenu__title,
   .el-submenu .el-menu-item {
-    min-width: $sideBarWidth !important;
-    background-color: $subMenuBg !important;
+    min-width: 210px !important;
+    background-color: #1f2d3d !important;
 
     &:hover {
-      background-color: $subMenuHover !important;
+      background-color: #001528 !important;
     }
   }
 }

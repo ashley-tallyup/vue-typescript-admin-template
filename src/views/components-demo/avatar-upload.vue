@@ -34,8 +34,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import AvatarUpload from '@/components/AvatarUpload/index.vue'
-import PanThumb from '@/components/PanThumb/index.vue'
+import AvatarUpload from '@/vue-typescript-admin-template/src/components/AvatarUpload/index.vue'
+import PanThumb from '@/vue-typescript-admin-template/src/components/PanThumb/index.vue'
 
 @Component({
   name: 'AvatarUploadDemo',

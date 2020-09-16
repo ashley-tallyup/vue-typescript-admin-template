@@ -1,4 +1,4 @@
-import request from '@/utils/request'
+import request from '@/vue-typescript-admin-template/src/utils/request'
 import { IArticleData } from './types'
 
 export const defaultArticleData: IArticleData = {

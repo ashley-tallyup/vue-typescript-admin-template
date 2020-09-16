@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { TagsViewModule } from '@/store/modules/tags-view'
+import { TagsViewModule } from '@/vue-typescript-admin-template/src/store/modules/tags-view'
 
 @Component({
   name: 'AppMain'
