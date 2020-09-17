@@ -109,9 +109,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { getArticles } from '@/api/articles'
-import { IArticleData } from '@/api/types'
-import Pagination from '@/components/Pagination/index.vue'
+// import { getArticles } from '@/vue-typescript-admin-template/src/api/articles'
+import { getArticles } from './../../../src/api/articles'
+// import { IArticleData } from '@/vue-typescript-admin-template/src/api/types'
+import { IArticleData } from './../../../src/api/types'
+// import Pagination from '@/vue-typescript-admin-template/src/components/Pagination/index.vue'
+import Pagination from './../../../src/components/Pagination/index.vue'
 
 @Component({
   name: 'ArticleList',

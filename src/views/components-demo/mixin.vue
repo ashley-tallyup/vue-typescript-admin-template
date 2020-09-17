@@ -199,10 +199,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import PanThumb from '@/components/PanThumb/index.vue'
-import MaterialInput from '@/components/MaterialInput/index.vue'
-import Mallki from '@/components/TextHoverEffect/Mallki.vue'
-import DropdownMenu from '@/components/DropdownMenu/index.vue'
+// import PanThumb from '@/vue-typescript-admin-template/src/components/PanThumb/index.vue'
+import PanThumb from './../../../src/components/PanThumb/index.vue'
+// import MaterialInput from '@/vue-typescript-admin-template/src/components/MaterialInput/index.vue'
+import MaterialInput from './../../../src/components/MaterialInput/index.vue'
+// import Mallki from '@/vue-typescript-admin-template/src/components/TextHoverEffect/Mallki.vue'
+import Mallki from './../../../src/components/TextHoverEffect/Mallki.vue'
+// import DropdownMenu from '@/vue-typescript-admin-template/src/components/DropdownMenu/index.vue'
+import DropdownMenu from './../../../src/components/DropdownMenu/index.vue'
 
 @Component({
   name: 'ComponentMixinDemo',
@@ -256,31 +260,38 @@ export default class extends Vue {
 }
 
 .blue-btn {
-  @include colorBtn($blue)
+  // @include colorBtn($blue)
+  @include colorBtn(#324157)
 }
 
 .light-blue-btn {
-  @include colorBtn($light-blue)
+  // @include colorBtn($light-blue)
+  @include colorBtn(#3A71A8)
 }
 
 .red-btn {
-  @include colorBtn($red)
+  // @include colorBtn($red)
+  @include colorBtn(#C03639)
 }
 
 .pink-btn {
-  @include colorBtn($pink)
+  // @include colorBtn($pink)
+  @include colorBtn(#E65D6E)
 }
 
 .green-btn {
-  @include colorBtn($green)
+  // @include colorBtn($green)
+  @include colorBtn(#30B08F)
 }
 
 .tiffany-btn {
-  @include colorBtn($tiffany)
+  // @include colorBtn($tiffany)
+  @include colorBtn(#4AB7BD)
 }
 
 .yellow-btn {
-  @include colorBtn($yellow)
+  // @include colorBtn($yellow)
+  @include colorBtn(#FEC171)
 }
 
 .pan-btn {

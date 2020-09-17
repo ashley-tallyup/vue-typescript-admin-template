@@ -9,7 +9,8 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator'
-import { SettingsModule } from '@/store/modules/settings'
+// import { SettingsModule } from '@/vue-typescript-admin-template/src/store/modules/settings'
+import { SettingsModule } from './../../../src/store/modules/settings'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const version = require('element-ui/package.json').version // element-ui version from node_modules

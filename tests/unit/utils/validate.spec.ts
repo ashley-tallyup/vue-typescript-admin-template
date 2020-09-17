@@ -1,4 +1,5 @@
-import { isValidUsername, isExternal } from '@/utils/validate'
+// import { isValidUsername, isExternal } from '@/vue-typescript-admin-template/src/utils/validate'
+import { isValidUsername, isExternal } from './../../../src/utils/validate'
 
 describe('Utils:validate', () => {
   it('isValidUsername', () => {

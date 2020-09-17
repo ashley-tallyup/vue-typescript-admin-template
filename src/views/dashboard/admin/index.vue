@@ -76,7 +76,8 @@
 <script lang="ts">
 import 'echarts/theme/macarons.js' // Theme used in BarChart, LineChart, PieChart and RadarChart
 import { Component, Vue } from 'vue-property-decorator'
-import GithubCorner from '@/components/GithubCorner/index.vue'
+// import GithubCorner from '@/vue-typescript-admin-template/src/components/GithubCorner/index.vue'
+import GithubCorner from './../../../../src/components/GithubCorner/index.vue'
 import BarChart from './components/BarChart.vue'
 import BoxCard from './components/BoxCard.vue'
 import LineChart, { ILineChartData } from './components/LineChart.vue'

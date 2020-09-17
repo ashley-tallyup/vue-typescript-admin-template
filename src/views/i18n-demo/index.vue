@@ -163,7 +163,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
+// import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { AppModule } from './../../../src/store/modules/app'
 import local from './local'
 
 @Component({

@@ -85,7 +85,12 @@ export default class extends Vue {
 
 .node-article-content {
   margin: 20px 0 0;
-  @include clearfix;
+  // @include clearfix;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   font-size: 16px;
   color: #333;
   letter-spacing: 0.5px;

@@ -130,7 +130,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import BackToTop from '@/components/BackToTop/index.vue'
+// import BackToTop from '@/vue-typescript-admin-template/src/components/BackToTop/index.vue'
+import BackToTop from './../../../src/components/BackToTop/index.vue'
 
 @Component({
   name: 'BackToTopDemo',

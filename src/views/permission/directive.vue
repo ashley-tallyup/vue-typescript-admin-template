@@ -128,7 +128,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { checkPermission } from '@/utils/permission' // Use permission directly
+// import { checkPermission } from '@/vue-typescript-admin-template/src/utils/permission' // Use permission directly
+import { checkPermission } from './../../../src/utils/permission' // Use permission directly
 import SwitchRoles from './components/SwitchRoles.vue'
 
 @Component({

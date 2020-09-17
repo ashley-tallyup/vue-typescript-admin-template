@@ -20,7 +20,8 @@
 <script lang="ts">
 import ImageCropUpload from 'vue-image-crop-upload'
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
+// import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { AppModule } from './../../../src/store/modules/app'
 
 @Component({
   name: 'AvatarUpload',

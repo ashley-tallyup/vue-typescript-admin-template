@@ -19,7 +19,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { scrollTo } from '@/utils/scroll-to'
+// import { scrollTo } from '@/vue-typescript-admin-template/src/utils/scroll-to'
+import { scrollTo } from './../../../src/utils/scroll-to'
 
 @Component({
   name: 'Pagination'

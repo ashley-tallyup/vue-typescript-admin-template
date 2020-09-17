@@ -22,7 +22,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import UploadExcelComponent from '@/components/UploadExcel/index.vue'
+// import UploadExcelComponent from '@/vue-typescript-admin-template/src/components/UploadExcel/index.vue'
+import UploadExcelComponent from './../../../src/components/UploadExcel/index.vue'
 
 @Component({
   name: 'UploadExcel',

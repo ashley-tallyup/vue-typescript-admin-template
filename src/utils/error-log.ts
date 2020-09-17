@@ -1,7 +1,10 @@
 import Vue from 'vue'
-import { ErrorLogModule } from '@/store/modules/error-log'
-import { isArray } from '@/utils/validate'
-import settings from '@/settings'
+// import { ErrorLogModule } from '@/vue-typescript-admin-template/src/store/modules/error-log'
+import { ErrorLogModule } from './../../src/store/modules/error-log'
+// import { isArray } from '@/vue-typescript-admin-template/src/utils/validate'
+import { isArray } from './../../src/utils/validate'
+// import settings from '@/vue-typescript-admin-template/src/settings'
+import settings from './../../src/settings'
 
 const { errorLog: needErrorLog } = settings
 

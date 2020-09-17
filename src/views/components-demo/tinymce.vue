@@ -25,7 +25,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Tinymce from '@/components/Tinymce/index.vue'
+// import Tinymce from '@/vue-typescript-admin-template/src/components/Tinymce/index.vue'
+import Tinymce from './../../../src/components/Tinymce/index.vue'
 
 @Component({
   name: 'TinymceDemo',

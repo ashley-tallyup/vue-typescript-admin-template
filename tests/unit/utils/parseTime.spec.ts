@@ -1,4 +1,5 @@
-import { parseTime } from '@/utils/index.ts'
+// import { parseTime } from '@/vue-typescript-admin-template/src/utils/index.ts'
+import { parseTime } from './../../../src/utils/index'
 
 describe('Utils:parseTime', () => {
   const d = +new Date('2018-07-13 17:54:01') // "2018-07-13 17:54:01"

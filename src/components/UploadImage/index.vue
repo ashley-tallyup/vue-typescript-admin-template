@@ -79,7 +79,13 @@ export default class extends Vue {
 .upload-container {
   width: 100%;
   position: relative;
-  @include clearfix;
+  // @include clearfix;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
   .image-uploader {
     width: 35%;

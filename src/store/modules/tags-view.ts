@@ -1,6 +1,7 @@
 import { VuexModule, Module, Mutation, Action, getModule } from 'vuex-module-decorators'
 import { Route } from 'vue-router'
-import store from '@/store'
+// import store from '@/vue-typescript-admin-template/src/store'
+import store from './../../../src/store'
 
 export interface ITagView extends Partial<Route> {
   title?: string

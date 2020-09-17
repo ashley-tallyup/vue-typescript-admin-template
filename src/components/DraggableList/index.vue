@@ -62,7 +62,8 @@
 <script lang="ts">
 import Draggable from 'vuedraggable'
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { IArticleData } from '@/api/types'
+// import { IArticleData } from '@/vue-typescript-admin-template/src/api/types'
+import { IArticleData } from './../../../src/api/types'
 
 @Component({
   name: 'DraggableList',

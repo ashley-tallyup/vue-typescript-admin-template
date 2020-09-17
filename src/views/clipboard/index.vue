@@ -42,7 +42,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { handleClipboard, clipboardSuccess } from '@/utils/clipboard' // use clipboard directly
+// import { handleClipboard, clipboardSuccess } from '@/vue-typescript-admin-template/src/utils/clipboard' // use clipboard directly
+import { handleClipboard, clipboardSuccess } from './../../../src/utils/clipboard' // use clipboard directly
 
 @Component({
   name: 'Clipboard'

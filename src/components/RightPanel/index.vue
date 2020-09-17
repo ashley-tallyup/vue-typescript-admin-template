@@ -22,8 +22,10 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
-import { addClass, removeClass } from '@/utils'
-import { SettingsModule } from '@/store/modules/settings'
+// import { addClass, removeClass } from '@/vue-typescript-admin-template/src/utils'
+import { addClass, removeClass } from './../../../src/utils'
+// import { SettingsModule } from '@/vue-typescript-admin-template/src/store/modules/settings'
+import { SettingsModule } from './../../../src/store/modules/settings'
 
 @Component({
   name: 'RightPanel'

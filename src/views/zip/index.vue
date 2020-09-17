@@ -71,10 +71,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { getArticles } from '@/api/articles'
-import { IArticleData } from '@/api/types'
-import { formatJson } from '@/utils'
-import { exportTxt2Zip } from '@/utils/zip'
+// import { getArticles } from '@/vue-typescript-admin-template/src/api/articles'
+import { getArticles } from './../../../src/api/articles'
+// import { IArticleData } from '@/vue-typescript-admin-template/src/api/types'
+import { IArticleData } from './../../../src/api/types'
+// import { formatJson } from '@/vue-typescript-admin-template/src/utils'
+import { formatJson } from './../../../src/utils'
+// import { exportTxt2Zip } from '@/vue-typescript-admin-template/src/utils/zip'
+import { exportTxt2Zip } from './../../../src/utils/zip'
 
 @Component({
   name: 'ExportZip'

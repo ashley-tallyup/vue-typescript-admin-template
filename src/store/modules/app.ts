@@ -1,7 +1,10 @@
 import { VuexModule, Module, Mutation, Action, getModule } from 'vuex-module-decorators'
-import { getSidebarStatus, getSize, setSidebarStatus, setLanguage, setSize } from '@/utils/cookies'
-import { getLocale } from '@/lang'
-import store from '@/store'
+// import { getSidebarStatus, getSize, setSidebarStatus, setLanguage, setSize } from '@/vue-typescript-admin-template/src/utils/cookies'
+import { getSidebarStatus, getSize, setSidebarStatus, setLanguage, setSize } from './../../../src/utils/cookies'
+// import { getLocale } from '@/vue-typescript-admin-template/src/lang'
+import { getLocale } from './../../../src/lang'
+// import store from '@/vue-typescript-admin-template/src/store'
+import store from './../../../src/store'
 
 export enum DeviceType {
   Mobile,

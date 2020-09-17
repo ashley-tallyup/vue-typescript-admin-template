@@ -24,7 +24,8 @@
 import VueDropzone from 'vue2-dropzone'
 import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { SettingsModule } from '@/store/modules/settings'
+// import { SettingsModule } from '@/vue-typescript-admin-template/src/store/modules/settings'
+import { SettingsModule } from './../../../src/store/modules/settings'
 
 @Component({
   name: 'Dropzone',

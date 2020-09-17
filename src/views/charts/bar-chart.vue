@@ -9,7 +9,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import BarChart from '@/components/Charts/BarChart.vue'
+// import BarChart from '@/vue-typescript-admin-template/src/components/Charts/BarChart.vue'
+import BarChart from './../../../src/components/Charts/BarChart.vue'
 
 @Component({
   name: 'BarChartDemo',

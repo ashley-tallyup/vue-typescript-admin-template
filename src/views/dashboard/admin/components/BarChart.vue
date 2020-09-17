@@ -9,7 +9,8 @@
 import echarts, { EChartOption } from 'echarts'
 import { Component, Prop } from 'vue-property-decorator'
 import { mixins } from 'vue-class-component'
-import ResizeMixin from '@/components/Charts/mixins/resize'
+// import ResizeMixin from '@/vue-typescript-admin-template/src/components/Charts/mixins/resize'
+import ResizeMixin from './../../../../../src/components/Charts/mixins/resize'
 
 const animationDuration = 6000
 

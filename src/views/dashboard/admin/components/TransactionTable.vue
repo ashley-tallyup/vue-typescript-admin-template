@@ -36,8 +36,10 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { getTransactions } from '@/api/transactions'
-import { ITransactionData } from '@/api/types'
+// import { getTransactions } from '@/vue-typescript-admin-template/src/api/transactions'
+import { getTransactions } from './../../../../../src/api/transactions'
+// import { ITransactionData } from '@/vue-typescript-admin-template/src/api/types'
+import { ITransactionData } from './../../../../../src/api/types'
 
 @Component({
   name: 'TransactionTable',

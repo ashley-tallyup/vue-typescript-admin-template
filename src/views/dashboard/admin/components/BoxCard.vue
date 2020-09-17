@@ -46,9 +46,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { UserModule } from '@/store/modules/user'
-import PanThumb from '@/components/PanThumb/index.vue'
-import Mallki from '@/components/TextHoverEffect/Mallki.vue'
+// import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import { UserModule } from './../../../../../src/store/modules/user'
+// import PanThumb from '@/vue-typescript-admin-template/src/components/PanThumb/index.vue'
+import PanThumb from './../../../../../src/components/PanThumb/index.vue'
+// import Mallki from '@/vue-typescript-admin-template/src/components/TextHoverEffect/Mallki.vue'
+import Mallki from './../../../../../src/components/TextHoverEffect/Mallki.vue'
 
 @Component({
   name: 'BoxCard',

@@ -87,7 +87,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { getArticles } from '@/api/articles'
+// import { getArticles } from '@/vue-typescript-admin-template/src/api/articles'
+import { getArticles } from './../../../../src/api/articles'
 
 @Component({
   name: 'TabPane'

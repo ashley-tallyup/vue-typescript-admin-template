@@ -1,5 +1,6 @@
 import { DirectiveOptions } from 'vue'
-import { UserModule } from '@/store/modules/user'
+// import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import { UserModule } from './../../../src/store/modules/user'
 
 export const permission: DirectiveOptions = {
   inserted(el, binding) {

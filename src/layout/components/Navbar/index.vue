@@ -16,7 +16,7 @@
         <error-log class="errLog-container right-menu-item hover-effect" />
         <screenfull class="right-menu-item hover-effect" />
         <el-tooltip
-          :content="$t('navbar.size')"
+          content="Global Size"
           effect="dark"
           placement="bottom"
         >
@@ -38,12 +38,12 @@
         <el-dropdown-menu slot="dropdown">
           <router-link to="/profile/">
             <el-dropdown-item>
-              {{ $t('navbar.profile') }}
+              {{ "Profile" }}
             </el-dropdown-item>
           </router-link>
           <router-link to="/">
             <el-dropdown-item>
-              {{ $t('navbar.dashboard') }}
+              {{ "Dashboard" }}
             </el-dropdown-item>
           </router-link>
           <a
@@ -51,7 +51,7 @@
             href="https://github.com/armour/vue-typescript-admin-template/"
           >
             <el-dropdown-item>
-              {{ $t('navbar.github') }}
+              {{ "Github" }}
             </el-dropdown-item>
           </a>
           <a
@@ -65,7 +65,7 @@
             @click.native="logout"
           >
             <span style="display:block;">
-              {{ $t('navbar.logOut') }}
+              {{ "Log Out" }}
             </span>
           </el-dropdown-item>
         </el-dropdown-menu>
@@ -76,15 +76,24 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { AppModule } from '@/store/modules/app'
-import { UserModule } from '@/store/modules/user'
-import Breadcrumb from '@/components/Breadcrumb/index.vue'
-import ErrorLog from '@/components/ErrorLog/index.vue'
-import Hamburger from '@/components/Hamburger/index.vue'
-import HeaderSearch from '@/components/HeaderSearch/index.vue'
-import LangSelect from '@/components/LangSelect/index.vue'
-import Screenfull from '@/components/Screenfull/index.vue'
-import SizeSelect from '@/components/SizeSelect/index.vue'
+// import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { AppModule } from './../../../../src/store/modules/app'
+// import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import { UserModule } from './../../../../src/store/modules/user'
+// import Breadcrumb from '@/vue-typescript-admin-template/src/components/Breadcrumb/index.vue'
+import Breadcrumb from './../../../../src/components/Breadcrumb/index.vue'
+// import ErrorLog from '@/vue-typescript-admin-template/src/components/ErrorLog/index.vue'
+import ErrorLog from './../../../../src/components/ErrorLog/index.vue'
+// import Hamburger from '@/vue-typescript-admin-template/src/components/Hamburger/index.vue'
+import Hamburger from './../../../../src/components/Hamburger/index.vue'
+// import HeaderSearch from '@/vue-typescript-admin-template/src/components/HeaderSearch/index.vue'
+import HeaderSearch from './../../../../src/components/HeaderSearch/index.vue'
+// import LangSelect from '@/vue-typescript-admin-template/src/components/LangSelect/index.vue'
+import LangSelect from './../../../../src/components/LangSelect/index.vue'
+// import Screenfull from '@/vue-typescript-admin-template/src/components/Screenfull/index.vue'
+import Screenfull from './../../../../src/components/Screenfull/index.vue'
+// import SizeSelect from '@/vue-typescript-admin-template/src/components/SizeSelect/index.vue'
+import SizeSelect from './../../../../src/components/SizeSelect/index.vue'
 
 @Component({
   name: 'Navbar',

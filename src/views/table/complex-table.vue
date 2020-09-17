@@ -365,11 +365,16 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { Form } from 'element-ui'
 import { cloneDeep } from 'lodash'
-import { getArticles, getPageviews, createArticle, updateArticle, defaultArticleData } from '@/api/articles'
-import { IArticleData } from '@/api/types'
-import { exportJson2Excel } from '@/utils/excel'
-import { formatJson } from '@/utils'
-import Pagination from '@/components/Pagination/index.vue'
+// import { getArticles, getPageviews, createArticle, updateArticle, defaultArticleData } from '@/vue-typescript-admin-template/src/api/articles'
+import { getArticles, getPageviews, createArticle, updateArticle, defaultArticleData } from './../../../src/api/articles'
+// import { IArticleData } from '@/vue-typescript-admin-template/src/api/types'
+import { IArticleData } from './../../../src/api/types'
+// import { exportJson2Excel } from '@/vue-typescript-admin-template/src/utils/excel'
+import { exportJson2Excel } from './../../../src/utils/excel'
+// import { formatJson } from '@/vue-typescript-admin-template/src/utils'
+import { formatJson } from './../../../src/utils'
+// import Pagination from '@/vue-typescript-admin-template/src/components/Pagination/index.vue'
+import Pagination from './../../../src/components/Pagination/index.vue'
 
 const calendarTypeOptions = [
   { key: 'CN', displayName: 'China' },

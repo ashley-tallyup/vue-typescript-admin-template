@@ -9,7 +9,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import LineChart from '@/components/Charts/LineChart.vue'
+// import LineChart from '@/vue-typescript-admin-template/src/components/Charts/LineChart.vue'
+import LineChart from './../../../src/components/Charts/LineChart.vue'
 
 @Component({
   name: 'LineChartDemo',

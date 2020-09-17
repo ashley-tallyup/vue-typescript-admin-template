@@ -155,15 +155,24 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { isValidURL } from '@/utils/validate'
-import { getArticle, defaultArticleData } from '@/api/articles'
-import { getUsers } from '@/api/users'
-import { AppModule } from '@/store/modules/app'
-import { TagsViewModule, ITagView } from '@/store/modules/tags-view'
-import MaterialInput from '@/components/MaterialInput/index.vue'
-import Sticky from '@/components/Sticky/index.vue'
-import Tinymce from '@/components/Tinymce/index.vue'
-import UploadImage from '@/components/UploadImage/index.vue'
+// import { isValidURL } from '@/vue-typescript-admin-template/src/utils/validate'
+import { isValidURL } from './../../../../src/utils/validate'
+// import { getArticle, defaultArticleData } from '@/vue-typescript-admin-template/src/api/articles'
+import { getArticle, defaultArticleData } from './../../../../src/api/articles'
+// import { getUsers } from '@/vue-typescript-admin-template/src/api/users'
+import { getUsers } from './../../../../src/api/users'
+// import { AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { AppModule } from './../../../../src/store/modules/app'
+// import { TagsViewModule, ITagView } from '@/vue-typescript-admin-template/src/store/modules/tags-view'
+import { TagsViewModule, ITagView } from './../../../../src/store/modules/tags-view'
+// import MaterialInput from '@/vue-typescript-admin-template/src/components/MaterialInput/index.vue'
+import MaterialInput from './../../../../src/components/MaterialInput/index.vue'
+// import Sticky from '@/vue-typescript-admin-template/src/components/Sticky/index.vue'
+import Sticky from './../../../../src/components/Sticky/index.vue'
+// import Tinymce from '@/vue-typescript-admin-template/src/components/Tinymce/index.vue'
+import Tinymce from './../../../../src/components/Tinymce/index.vue'
+// import UploadImage from '@/vue-typescript-admin-template/src/components/UploadImage/index.vue'
+import UploadImage from './../../../../src/components/UploadImage/index.vue'
 import Warning from './Warning.vue'
 import { CommentDropdown, PlatformDropdown, SourceUrlDropdown } from './Dropdown'
 import { Form } from 'element-ui'
@@ -368,7 +377,12 @@ export default class extends Vue {
 
     .postInfo-container {
       position: relative;
-      @include clearfix;
+      // @include clearfix;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
       margin-bottom: 10px;
 
       .postInfo-container-item {

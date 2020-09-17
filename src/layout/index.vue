@@ -28,10 +28,13 @@
 <script lang="ts">
 import { Component } from 'vue-property-decorator'
 import { mixins } from 'vue-class-component'
-import { DeviceType, AppModule } from '@/store/modules/app'
-import { SettingsModule } from '@/store/modules/settings'
+// import { DeviceType, AppModule } from '@/vue-typescript-admin-template/src/store/modules/app'
+import { DeviceType, AppModule } from './../../src/store/modules/app'
+// import { SettingsModule } from '@/vue-typescript-admin-template/src/store/modules/settings'
+import { SettingsModule } from './../../src/store/modules/settings'
 import { AppMain, Navbar, Settings, Sidebar, TagsView } from './components'
-import RightPanel from '@/components/RightPanel/index.vue'
+// import RightPanel from '@/vue-typescript-admin-template/src/components/RightPanel/index.vue'
+import RightPanel from './../../src/components/RightPanel/index.vue'
 import ResizeMixin from './mixin/resize'
 
 @Component({
@@ -75,7 +78,12 @@ export default class extends mixins(ResizeMixin) {
 
 <style lang="scss" scoped>
 .app-wrapper {
-  @include clearfix;
+  // @include clearfix;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   position: relative;
   height: 100%;
   width: 100%;
@@ -94,13 +102,13 @@ export default class extends mixins(ResizeMixin) {
 .main-container {
   min-height: 100%;
   transition: margin-left .28s;
-  margin-left: $sideBarWidth;
+  margin-left: 210px; // $sideBarWidth;
   position: relative;
 }
 
 .sidebar-container {
   transition: width 0.28s;
-  width: $sideBarWidth !important;
+  width: 210px !important; // $sideBarWidth !important;
   height: 100%;
   position: fixed;
   font-size: 0px;
@@ -116,7 +124,8 @@ export default class extends mixins(ResizeMixin) {
   top: 0;
   right: 0;
   z-index: 9;
-  width: calc(100% - #{$sideBarWidth});
+  // width: calc(100% - #{$sideBarWidth});
+  width: calc(100% - #{210px});
   transition: width 0.28s;
 }
 
@@ -142,7 +151,7 @@ export default class extends mixins(ResizeMixin) {
 
   .sidebar-container {
     transition: transform .28s;
-    width: $sideBarWidth !important;
+    width: 210px !important; // $sideBarWidth !important;
   }
 
   &.openSidebar {
@@ -154,7 +163,8 @@ export default class extends mixins(ResizeMixin) {
     .sidebar-container {
       pointer-events: none;
       transition-duration: 0.3s;
-      transform: translate3d(-$sideBarWidth, 0, 0);
+      // transform: translate3d(-$sideBarWidth, 0, 0);
+      transform: translate3d(-210, 0, 0);
     }
   }
 

@@ -3,9 +3,12 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import { Message } from 'element-ui'
 import { Route } from 'vue-router'
-import { UserModule } from '@/store/modules/user'
-import { PermissionModule } from '@/store/modules/permission'
-import i18n from '@/lang' // Internationalization
+// import { UserModule } from '@/vue-typescript-admin-template/src/store/modules/user'
+import { UserModule } from './../src/store/modules/user'
+// import { PermissionModule } from '@/vue-typescript-admin-template/src/store/modules/permission'
+import { PermissionModule } from './../src/store/modules/permission'
+// import i18n from '@/vue-typescript-admin-template/src/lang' // Internationalization
+import i18n from './../src/lang' // Internationalization
 import settings from './settings'
 
 NProgress.configure({ showSpinner: false })

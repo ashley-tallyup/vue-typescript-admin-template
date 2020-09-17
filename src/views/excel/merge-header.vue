@@ -72,10 +72,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { getArticles } from '@/api/articles'
-import { IArticleData } from '@/api/types'
-import { formatJson } from '@/utils'
-import { exportJson2Excel } from '@/utils/excel'
+// import { getArticles } from '@/vue-typescript-admin-template/src/api/articles'
+import { getArticles } from './../../../src/api/articles'
+// import { IArticleData } from '@/vue-typescript-admin-template/src/api/types'
+import { IArticleData } from './../../../src/api/types'
+// import { formatJson } from '@/vue-typescript-admin-template/src/utils'
+import { formatJson } from './../../../src/utils'
+// import { exportJson2Excel } from '@/vue-typescript-admin-template/src/utils/excel'
+import { exportJson2Excel } from './../../../src/utils/excel'
 
 @Component({
   name: 'MergeHeader'

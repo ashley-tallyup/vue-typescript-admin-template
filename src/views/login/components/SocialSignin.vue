@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-// import openWindow from '@/utils/openWindow'
+// import openWindow from '@/vue-typescript-admin-template/src/utils/openWindow'
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
